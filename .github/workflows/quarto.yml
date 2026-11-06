@@ -21,6 +21,9 @@ jobs:
         with:
           # upload entire directory
           path: '.'
+          enablement: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          enablement: true
