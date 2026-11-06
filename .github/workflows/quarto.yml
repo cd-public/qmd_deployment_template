@@ -1,3 +1,7 @@
+name: Quarto Attempt
+
+on: push
+
 jobs:
   # Single deploy job no building
   deploy:
