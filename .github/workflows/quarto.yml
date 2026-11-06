@@ -2,6 +2,11 @@ name: Quarto Attempt
 
 on: push
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   # Single deploy job no building
   deploy:
