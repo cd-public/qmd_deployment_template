@@ -14,16 +14,11 @@ jobs:
         uses: actions/checkout@v6
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v4
         with:
           # upload entire directory
           path: '.'
-          enablement: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          enablement: true
